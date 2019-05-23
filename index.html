@@ -679,26 +679,21 @@
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
-            visitor: {
-                id:              'VISITOR-UNIQUE-ID'   // Required if user is logged in
-                // email:        // Optional
-                // role:         // Optional
+           visitor: {
+               id:           'VISITOR-UNIQUE-ID',   // Required if user is logged in
+               email:        "stoffer@pendo.io"
+           },
 
-                // You can add any additional visitor level key-values here,
-                // as long as it's not one of the above reserved names.
-            },
+           account: {
+               id:           'stoffer-account', // Highly recommended
+               username:     'toddstoffer'
+           },
+          parentAccount: {
+               id:           'stoffer-parent-account',
+               name:         'name'
 
-            account: {
-                id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
-                // name:         // Optional
-                // planLevel:    // Optional
-                // planPrice:    // Optional
-                // creationDate: // Optional
-
-                // You can add any additional account level key-values here,
-                // as long as it's not one of the above reserved names.
-            }
-        });
+           }
+       });
 })('aa43a16d-217b-4639-7162-d377ac13d13e');
 </script>
 
